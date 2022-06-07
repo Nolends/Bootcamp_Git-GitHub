@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+        .item{
+            background-color: lime;
+            color: black;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .flex-1{
+            flex: 1;
+            /*grow = 1, Shrink = 1 and Basis = 0*/
+        }
+        .flex-2{
+            flex: 2;
+            /*grow = 2, Shrink = 1 and Basis = 0*/
+        }
+        .flex-3{
+            flex: 3;
+            /*grow = 3, Shrink = 2 and Basis = auto*/
+        }
+        .width{
+            width: 200px;
+            /* O basis = 0 ignora o with porem n o min width*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex 1</h1>
+    <div class="container">
+        <div class="item flex-1">1</div>
+        <div class="item flex-1">2</div>
+        <div class="item flex-1">3</div>
+        <div class="item flex-1">4</div>
+        <div class="item flex-1">5</div>
+    </div>
+    <h1>Flex 1 e 2</h1>
+    <div class="container">
+        <div class="item flex-1 ">1</div>
+        <div class="item flex-2">2</div>
+        <div class="item flex-1">3</div>
+        <div class="item flex-2">4</div>
+        <div class="item flex-1">5</div>
+    </div>
+    <h1>Flex mix</h1>
+    <div class="container">
+        <div class="item flex-1">Alone with you</div>
+        <div class="item flex-2">Stranger</div>
+        <div class="item flex-3">Steady Glow</div>
+        <div class="item flex-1">State Champs</div>
+        <div class="item flex-2">Soon or Later</div>
+        <div class="item flex-3">Write That Down</div>
+    </div>
+</body>
+</html>

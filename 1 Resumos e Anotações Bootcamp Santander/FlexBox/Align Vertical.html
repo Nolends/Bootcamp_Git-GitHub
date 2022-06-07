@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: violet;
+            margin: 5px;
+            color: black;
+            text-align: center;
+            flex: 1;
+            max-width: 100px;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .flex  {
+            flex: 1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+        .centra.item{
+            flex: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Center</h1>
+    <section class="container center flex">
+        <div class="item">Bad Luck</div>
+        <div class="item">Alone With You</div>
+        <div class="item">Down For The Ride</div>
+    </section>
+    <h1>Stretch</h1>
+    <section class="container stretch flex">
+        <div class="item">Bad Luck</div>
+        <div class="item">Alone With You</div>
+        <div class="item">Down For The Ride</div>
+    </section>
+    <h1>Flex Start</h1>
+    <section class="container start flex">
+        <div class="item">Bad Luck</div>
+        <div class="item">Alone With You</div>
+        <div class="item">Down For The Ride</div>
+    </section>
+    <h1>Flex End</h1>
+    <section class="container end flex">
+        <div class="item">Bad Luck</div>
+        <div class="item">Alone With You</div>
+        <div class="item">Down For The Ride</div>
+    </section>
+    <h1>baseline</h1>
+    <section class="container baseline flex">
+        <div class="item"><br> Bad Luck</div>
+        <div class="item">Alone With You</div>
+        <div class="item">Down For The Ride</div>
+    </section>
+    <h1>Center Column</h1>
+    <section class="container center flex column">
+        <div class="item">Bad Luck</div>
+        <div class="item">Alone With You</div>
+        <div class="item">Down For The Ride</div>
+    </section>
+     </section>
+    <h1>Stretch Column</h1>
+    <section class="container stretch flex column">
+        <div class="item">Bad Luck</div>
+        <div class="item">Alone With You</div>
+        <div class="item">Down For The Ride</div>
+    </section>
+    <h1>Flex Start Column</h1>
+    <section class="container start flex column">
+        <div class="item">Bad Luck</div>
+        <div class="item">Alone With You</div>
+        <div class="item">Down For The Ride</div>
+    </section>
+    <h1>Flex End Column</h1>
+    <section class="container end flex column">
+        <div class="item">Bad Luck</div>
+        <div class="item">Alone With You</div>
+        <div class="item">Down For The Ride</div>
+    </section>
+    <h1>baseline Column</h1>
+    <section class="container baseline flex column">
+        <div class="item"><br> Bad Luck</div>
+        <div class="item">Alone With You</div>
+        <div class="item">Down For The Ride</div>
+    </section>
+    <h1>Align Screen Center</h1>
+    <section class="container central center">
+        <div class="item">I was slurring all my words, trying to keep it all together wishing that my best was better, fix me.</div>
+</section>
+</body>
+</html>
